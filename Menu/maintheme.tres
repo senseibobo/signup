@@ -1,13 +1,13 @@
 [gd_resource type="Theme" load_steps=16 format=2]
 
-[ext_resource path="res://Menu/Fonts/RobotoMono-Regular.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Menu/textBox.png" type="Texture" id=2]
-[ext_resource path="res://Menu/Button.png" type="Texture" id=3]
-[ext_resource path="res://Menu/Button_pressed.png" type="Texture" id=4]
-[ext_resource path="res://Menu/square_sheckbox_checked.png" type="Texture" id=5]
-[ext_resource path="res://Menu/square_sheckbox_.png" type="Texture" id=6]
-[ext_resource path="res://Menu/Group_2_copy.png" type="Texture" id=7]
-[ext_resource path="res://Menu/round_sheckbox_checked.png" type="Texture" id=8]
+[ext_resource path="res://menu/fonts/RobotoMono-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://menu/other/textBox.png" type="Texture" id=2]
+[ext_resource path="res://menu/button/Button.png" type="Texture" id=3]
+[ext_resource path="res://menu/button/Button_pressed.png" type="Texture" id=4]
+[ext_resource path="res://menu/other/square_sheckbox_checked.png" type="Texture" id=5]
+[ext_resource path="res://menu/other/square_sheckbox_.png" type="Texture" id=6]
+[ext_resource path="res://menu/other/Group_2_copy.png" type="Texture" id=7]
+[ext_resource path="res://menu/other/round_sheckbox_checked.png" type="Texture" id=8]
 
 [sub_resource type="StyleBoxTexture" id=5]
 content_margin_left = 16.0

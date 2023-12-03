@@ -6,16 +6,16 @@ export(NodePath) onready var username_error = get_node(username_error) as Contro
 export(NodePath) onready var password_error = get_node(password_error) as Control
 
 var popups = [
-	preload("res://Games/Captche/captcha.tscn"),
-	preload("res://Games/Captche/Rec.tscn"),
-	preload("res://Games/Captche/Cookies.tscn"),
-	preload("res://Games/Captche/TermsAndConditions.tscn"),
-	preload("res://Games/Captche/anketa/Anketa.tscn"),
-	preload("res://Games/Captche/Doors.tscn"),
-	preload("res://Games/Captche/Maze.tscn"),
-	preload("res://Games/Captche/Wires.tscn"),
-	preload("res://Games/Captche/pucacina/Shooter.tscn"),
-	preload("res://Games/Captche/haker/Haker.tscn"),
+	preload("res://games/captchas/recaptcha/recaptcha.tscn"),
+	preload("res://games/captchas/writetheword/word.tscn"),
+	preload("res://games/captchas/cookies/cookies.tscn"),
+	preload("res://games/captchas/termsandconditions/termsandconditions.tscn"),
+	preload("res://games/captchas/survey/survey.tscn"),
+	preload("res://games/captchas/doors/doors.tscn"),
+	preload("res://games/captchas/maze/maze.tscn"),
+	preload("res://games/captchas/wires/wires.tscn"),
+	preload("res://games/captchas/shooter/shooter.tscn"),
+	preload("res://games/captchas/hacker/hacker.tscn"),
 ]
 
 var popup_index: int = 0
@@ -35,14 +35,14 @@ func attempt_signin():
 	$CenterContainer/VBoxContainer/signin.disabled = true
 
 func popup_done():
-	Global.play_sound(preload("res://Menu/580115__annyew__confirm-button.ogg"),0.2)
+	Global.play_sound(preload("res://menu/audio/confirm.ogg"),0.2)
 	if popup_index < popups.size() - 1:
 		popup_index += 1
 		create_popup(popup_index)
 	else:
 		yield(get_tree().create_timer(1.0),"timeout")
-		Global.play_sound(preload("res://Menu/341732__sgtpepperarc360__wrong-answer.ogg"))
-		var e = preload("res://Menu/Error.tscn").instance()
+		Global.play_sound(preload("res://menu/audio/wrong.ogg"))
+		var e = preload("res://menu/error/error.tscn").instance()
 		add_child(e)
 
 func create_popup(index: int):
@@ -59,13 +59,13 @@ func popup_failed():
 	
 func push_username_error(text: String):
 	Global.create_toast("Error: " + text)
-	Global.play_sound(preload("res://Menu/341732__sgtpepperarc360__wrong-answer.ogg"))
+	Global.play_sound(preload("res://menu/audio/wrong.ogg"))
 	username_error.visible = true
 	username_error.get_node("Label").text = text
 
 func push_password_error(text: String):
 	Global.create_toast("Error: " + text)
-	Global.play_sound(preload("res://Menu/341732__sgtpepperarc360__wrong-answer.ogg"))
+	Global.play_sound(preload("res://menu/audio/wrong.ogg"))
 	password_error.visible = true
 	password_error.get_node("Label").text = text
 

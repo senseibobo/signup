@@ -5,9 +5,9 @@ var password: String
 
 var dragging: bool = false
 
-const toast_scene = preload("res://Menu/Toast.tscn")
-const signin_scene = preload("res://Games/signin.tscn")
-const signup_scene = preload("res://Games/signup.tscn")
+const toast_scene = preload("res://menu/toast/toast.tscn")
+const signin_scene = preload("res://games/signin.tscn")
+const signup_scene = preload("res://games/signup.tscn")
 
 
 func _input(event):

@@ -12,67 +12,67 @@ _global_script_classes=[ {
 "base": "Verifikacija",
 "class": "BrojSlova",
 "language": "GDScript",
-"path": "res://Games/Verifikacije/BrojSlova.gd"
+"path": "res://games/verification/lettercount.gd"
 }, {
 "base": "Panel",
 "class": "Captcha",
 "language": "GDScript",
-"path": "res://Games/Captche/Captcha.gd"
+"path": "res://games/captchas/Captcha.gd"
 }, {
 "base": "Troll",
 "class": "DrugoSlovoTroll",
 "language": "GDScript",
-"path": "res://Games/Verifikacije/DrugoSlovoTroll.gd"
+"path": "res://games/verification/secondlettertroll.gd"
 }, {
 "base": "Verifikacija",
 "class": "Drzave",
 "language": "GDScript",
-"path": "res://Games/Verifikacije/Drzave.gd"
+"path": "res://games/verification/countries.gd"
 }, {
 "base": "Verifikacija",
 "class": "ManjeVise",
 "language": "GDScript",
-"path": "res://Games/Verifikacije/ManjeVise.gd"
+"path": "res://games/verification/lessmore.gd"
 }, {
 "base": "Troll",
 "class": "ManjeViseTroll",
 "language": "GDScript",
-"path": "res://Games/Verifikacije/ManjeViseTroll.gd"
+"path": "res://games/verification/lessmoretroll.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "MazePlayer",
 "language": "GDScript",
-"path": "res://Games/Captche/MazePlayer.gd"
+"path": "res://games/captchas/maze/mazeplayer.gd"
 }, {
 "base": "Slovo",
 "class": "RandomBroj",
 "language": "GDScript",
-"path": "res://Games/Verifikacije/RandomBroj.gd"
+"path": "res://games/verification/randomnumber.gd"
 }, {
 "base": "Slovo",
 "class": "RandomSlovo",
 "language": "GDScript",
-"path": "res://Games/Verifikacije/RandomSlovo.gd"
+"path": "res://games/verification/randomletter.gd"
 }, {
 "base": "Verifikacija",
 "class": "Slovo",
 "language": "GDScript",
-"path": "res://Games/Verifikacije/Slovo.gd"
+"path": "res://games/verification/letter.gd"
 }, {
 "base": "Verifikacija",
 "class": "Troll",
 "language": "GDScript",
-"path": "res://Games/Verifikacije/Troll.gd"
+"path": "res://games/verification/troll.gd"
 }, {
 "base": "Reference",
 "class": "Verifikacija",
 "language": "GDScript",
-"path": "res://Games/verifikacije.gd"
+"path": "res://games/verifikacije.gd"
 }, {
 "base": "Verifikacija",
 "class": "Zivotinje",
 "language": "GDScript",
-"path": "res://Games/Verifikacije/Zivotinje.gd"
+"path": "res://games/verification/animals.gd"
 } ]
 _global_script_class_icons={
 "BrojSlova": "",
@@ -93,14 +93,14 @@ _global_script_class_icons={
 [application]
 
 config/name="SignUp"
-run/main_scene="res://Games/signup.tscn"
-boot_splash/image="res://Menu/main.png"
+run/main_scene="res://games/signup.tscn"
+boot_splash/image="res://menu/other/main.png"
 boot_splash/bg_color=Color( 0.870588, 0.831373, 0.756863, 1 )
-config/icon="res://Menu/Fonts/ikonasa.png"
+config/icon="res://menu/fonts/ikonasa.png"
 
 [autoload]
 
-Global="*res://Games/global.gd"
+Global="*res://games/global.gd"
 
 [display]
 

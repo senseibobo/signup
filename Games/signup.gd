@@ -32,7 +32,7 @@ func attempt_signup():
 	Global.username = username.text
 	Global.password = password.text
 	Global.create_toast("You have successfully created an account! Please log in. Username: " + Global.username + ", password: " + Global.password)
-	Global.play_sound(preload("res://Menu/456966__funwithsound__success-fanfare-trumpets.ogg"))
+	Global.play_sound(preload("res://menu/audio/success.ogg"))
 	get_tree().change_scene_to(Global.signin_scene)
 
 func verify_username():
@@ -67,13 +67,13 @@ func verify_password():
 			
 func push_username_error(text: String):
 	Global.create_toast("Error: " + text)
-	Global.play_sound(preload("res://Menu/341732__sgtpepperarc360__wrong-answer.ogg"))
+	Global.play_sound(preload("res://menu/audio/wrong.ogg"))
 	username_error.visible = true
 	username_error.get_node("Label").text = text
 
 func push_password_error(text: String):
 	Global.create_toast("Error: " + text)
-	Global.play_sound(preload("res://Menu/341732__sgtpepperarc360__wrong-answer.ogg"))
+	Global.play_sound(preload("res://menu/audio/wrong.ogg"))
 	password_error.visible = true
 	password_error.get_node("Label").text = text
 
