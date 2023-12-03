@@ -5,7 +5,8 @@ Features:
 - The game looks like a stylized browser window with fully functioning fullscreen and exit buttons.
 - Password strength checker (a bit of an excessive one)
 - Many minigames in the form of CAPTCHAs
-- One of them is 3D
+- The minigames function as their own separate windows (within the main game window)
+- An ending
 
 This was my second ever game jam. I took all the things that I've learned from the first hackathon and the first jam I've been and it looks like it paid off :)<br>
 
