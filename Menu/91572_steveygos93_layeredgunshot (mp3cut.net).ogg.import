@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/91572_steveygos93_layeredgunshot (mp3cut.net).ogg-e330464a379b721f622f26bedd1a24f2.oggstr"
+
+[deps]
+
+source_file="res://Menu/91572_steveygos93_layeredgunshot (mp3cut.net).ogg"
+dest_files=[ "res://.import/91572_steveygos93_layeredgunshot (mp3cut.net).ogg-e330464a379b721f622f26bedd1a24f2.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
